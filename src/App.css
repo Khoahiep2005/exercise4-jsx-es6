@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e8eef7);
+  color: #222;
+}
+
+.page {
+  width: 92%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.header {
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.fpt-logo {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f37021, #7ac143, #0094d9);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  margin: 10px 0;
+  font-size: 42px;
+}
+
+.header p {
+  color: #555;
+  font-size: 18px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 22px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #0f172a;
+  border-left: 6px solid #2563eb;
+  padding-left: 12px;
+}
+
+.card h3 {
+  margin-top: 25px;
+  color: #1e293b;
+}
+
+.hello-react {
+  text-align: center;
+  font-size: 54px;
+  margin: 30px 0;
+}
+
+.hello-react span {
+  color: blue;
+  font-weight: bold;
+}
+
+.react-logo-card {
+  width: 360px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.react-symbol {
+  font-size: 170px;
+  color: #22d3ee;
+  line-height: 1;
+}
+
+.react-logo-card h3 {
+  margin-top: 10px;
+  color: #0f172a;
+}
+
+.react-logo-card p {
+  color: #64748b;
+}
+
+.navbar {
+  display: flex;
+  background: #444;
+  padding: 10px;
+  border-radius: 6px;
+  gap: 6px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  background: #666;
+}
+
+.navbar .active {
+  background: #22c55e;
+}
+
+.navbar .login {
+  background: #000;
+}
+
+.jsx-title {
+  color: blue;
+  font-size: 58px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 255, 0.25);
+}
+
+.course-box {
+  width: 420px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.course-box h1 {
+  font-size: 46px;
+}
+
+.course-box ul {
+  font-size: 38px;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.result-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.result-box h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-list span {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0 30px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #dbe3ef;
+  padding: 13px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.highlight {
+  background: #ecfdf5;
+  color: #047857;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.class-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.children {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.class-box {
+  width: 260px;
+  border: 2px solid #94a3b8;
+  border-radius: 12px;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.class-box h3 {
+  margin: 0;
+  background: #dbeafe;
+  padding: 14px;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.class-box p {
+  margin: 0;
+  padding: 10px 14px;
+  border-top: 1px solid #cbd5e1;
+}
+
+.parent {
+  border-color: #2563eb;
+}
+
+.notice {
+  background: #fff7ed;
+  color: #c2410c;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .hello-react {
+    font-size: 38px;
+  }
+
+  .jsx-title {
+    font-size: 42px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .course-box h1 {
+    font-size: 34px;
+  }
+
+  .course-box ul {
+    font-size: 28px;
+  }
+}
